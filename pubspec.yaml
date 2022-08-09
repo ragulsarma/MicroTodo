@@ -1,0 +1,51 @@
+name: micro_todo
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+  flutter_slidable: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+  # Create launcher icons for flutter
+  flutter_launcher_icons: ^0.9.3
+
+  #Create native splash screen
+  flutter_native_splash: ^2.2.7
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path_android: "assets/icons/app_icon.png"
+  image_path_ios: "assets/icons/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/images/splash_image.png"
+  color_dark: "#ffffff"
+  image_dark: "assets/images/splash_image.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
